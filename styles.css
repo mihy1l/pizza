@@ -1,0 +1,158 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+nav li a:hover {
+  color: orange;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(wood.png);
+  color: #f7f7f7;
+}
+.menu-top {
+  padding-bottom: 0;
+}
+.menu-two {
+  padding-top: 0px;
+}
+.menu-two img {
+  transform: scaleY(-1);
+}
+.menu h1 {
+  text-align: center;
+}
+
+.menu-categories {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-category {
+  padding: 5px 15px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.menu-category.active {
+  background-color: #ff6600;
+  border: 1px solid #ff6600;
+}
+
+.menu-item {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.menu h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.menu img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.about,
+.hours {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 400px;
+}
+
+.about-content,
+.hours-content {
+  flex: 1;
+  padding: 20px;
+}
+.about-content h2 {
+  margin-bottom: 30px;
+}
+
+.about img,
+.hours img {
+  max-height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hours img {
+  max-height: 100%;
+  width: auto;
+  margin-left: 0; /* Убираем отступ слева */
+  margin-right: 20px; /* Добавляем отступ справа */
+}
+
+.hours section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-top: 10px;
+}
+.footer {
+  background-color: #333;
+  color: #dadada;
+}
